@@ -1,46 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - Groop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Groop</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #5f5f5f;
+    --border: #e5e5e5;
+    --accent: #1a1a1a;
+    --bg: #ffffff;
+    --link: #2563eb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 48px 0 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 32px 0 12px;
+  }
+  h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 24px 0 8px;
+  }
+  p { margin: 0 0 16px; color: var(--text); }
+  ul { margin: 0 0 16px; padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+  strong { font-weight: 600; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .meta {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+  }
+  .glance {
+    background: #f7f7f7;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 32px 0 40px;
+    font-size: 0.97rem;
+  }
+  .glance-label {
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .placeholder {
+    background: #fff3cd;
+    padding: 1px 4px;
+    border-radius: 3px;
+  }
+  hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+</style>
 </head>
-<body style="max-width:700px; margin:40px auto; font-family:sans-serif; line-height:1.6;">
-  <h1>Privacy Policy</h1>
-  <p>Last updated: 7/29/2026</p>
-
-  <p>Groop is an iMessage app extension that helps users schedule events directly within Messages. This policy explains what information the app collects and how it is used.</p>
-
-  <h2>What We Collect</h2>
-  <p>When you use Groop to create or join an event, we collect and store the following on our servers:</p>
-  <ul>
-    <li><strong>Event name</strong> — the name you give the event</li>
-    <li><strong>Display name</strong> — the user name you enter</li>
-    <li><strong>Conversation-scoped identifier</strong> — a random, opaque identifier tied to your use of the app within a specific Messages conversation. It is not your Apple ID, phone number, email address, or real name, and cannot be reversed to reveal any of these. The same person will have a different identifier in a different conversation or if messaging through a different app.</li>
-  </ul>
-  <p>We do not require account creation, login, email address, or phone number.</p>
-
-  <h2>How We Use This Data</h2>
-  <p>This data is used solely to operate the core event scheduling functionality of the app. We do not sell your data or use your data in any way beyond this.</p>
-
-  <h2>Data Retention</h2>
-  <p>Event data is deleted from our servers 90 days after event is created.</p>
-
-  <h2>Data Not Collected</h2>
-  <p>We do not collect your contacts, location, photos, or device identifiers such as IDFA. We do not use advertising SDKs or third-party trackers.</p>
-
-  <h2>Third Parties</h2>
-  <p>We do not sell or share your data with third parties. Data is stored using Supabase, which processes data on our behalf under their own security and privacy practices.</p>
-
-  <h2>Your Choices</h2>
-  <p>You can request deletion of your event data at any time by contacting us at groopsupport@gmail.com.</p>
-
-  <h2>Children's Privacy</h2>
-  <p>Groop is not directed at children under 9, and we do not knowingly collect data from children under 9.</p>
-
-  <h2>Changes to This Policy</h2>
-  <p>If this policy changes, the updated version will be posted here with a new "Last updated" date.</p>
-
-  <h2>Contact Us</h2>
-  <p>Questions or data deletion requests: groopsupport@gmail.com</p>
+<body>
+<div class="wrap">
+<h1 id="privacy-policy">Privacy Policy</h1>
+<p class="meta">Last updated: 8/8/26</p>
+<p class="meta">Groop</p>
+<p class="meta">groopsupport@gmail.com</p>
+<div class="glance">
+<p style="margin-bottom:0;">Groop is an iMessage extension for scheduling group events and comparing availabilities. There is no sign-up or login, the app works entirely within your existing iMessage conversations. We do not sell your information, we do not use it for advertising, and we automatically delete event data after 90 days.</p>
+</div>
+<h2 id="part-one-introduction">Part One: Introduction</h2>
+<h3 id="about-this-policy">1. About This Policy</h3>
+<p>This Privacy Policy (“Policy”) describes how Groop (“we,” “us,” or “our”) collects, uses, discloses, and protects information in connection with the Groop iMessage app (the “Service”). The Service is distributed worldwide through Apple’s iMessage App Store. If you use the Service outside the United States, see Section 14.4 for information about international data transfers and region-specific rights.</p>
+<h3 id="no-accounts-no-sign-up">2. No Accounts, No Sign-Up</h3>
+<p>Groop does not require you to create an account, log in, or provide a phone number or email address to use the Service. Any name you enter — whether your real name, a nickname, or another identifier — is provided voluntarily and displayed only within the group chat you’re using.</p>
+<h2 id="part-two-information-we-collect">Part Two: Information We Collect</h2>
+<h3 id="event-and-scheduling-information">3. Event and Scheduling Information</h3>
+<p>To let a group plan an event together, we collect and store:</p>
+<ul>
+<li>Event names and descriptions you or others in the group create</li>
+<li>Proposed time frames for an event</li>
+<li>Availability responses submitted by participants (e.g., which time slots work for them)</li>
+<li>The name or nickname each participant chooses to display</li>
+</ul>
+<p>This information is visible to other participants in the same group chat by design, that’s how the scheduling and availability-comparison features work.</p>
+<h3 id="technical-and-diagnostic-data">4. Technical and Diagnostic Data</h3>
+<ul>
+<li><strong>Crash reports and error logs</strong>, collected via Sentry, to help us fix bugs</li>
+<li><strong>Performance data</strong> (e.g., launch time, hang rate), also via Sentry</li>
+<li><strong>Device and app version identifiers</strong>, used only to reproduce and resolve technical issues</li>
+</ul>
+<p>We do not collect precise location, contacts, photos, or any data from other apps on your device.</p>
+<h3 id="what-we-dont-collect">5. What We Don’t Collect</h3>
+<p>We do not collect or require: phone numbers, email addresses, government ID, payment information, precise location, or your iMessage contacts. Apple’s iMessage framework may give the app access to the group chat context needed to function, but we only store the event and availability data described in Section 3.</p>
+<h2 id="part-three-how-we-use-and-share-information">Part Three: How We Use and Share Information</h2>
+<h3 id="how-we-use-your-information">6. How We Use Your Information</h3>
+<ul>
+<li>Operating the Service (creating events, collecting availabilities, displaying everyone's submitted availability in a shared grid)</li>
+<li>Diagnosing crashes and fixing bugs</li>
+<li>Improving app performance and reliability</li>
+</ul>
+<p>We never sell your information. We never use it for advertising, and we do not engage in cross-context behavioral advertising or tracking.</p>
+<h3 id="legal-bases-for-processing">7. Legal Bases for Processing</h3>
+<p>Where applicable law requires a stated legal basis, we rely on:</p>
+<ul>
+<li><strong>Contract / provision of service:</strong> creating and displaying events and availabilities within your group chat</li>
+<li><strong>Legitimate interests:</strong> crash diagnostics, performance monitoring, and debugging</li>
+<li><strong>Legal obligations:</strong> compliance with applicable law and lawful requests from regulators or law enforcement</li>
+</ul>
+<h3 id="service-providers">8. Service Providers</h3>
+<p>We share information with the following service providers, each subject to its own privacy obligations:</p>
+<ul>
+<li><strong>Supabase</strong> — backend infrastructure and database storage for event and availability data</li>
+<li><strong>Sentry</strong> — crash and performance monitoring</li>
+</ul>
+<p>We do not share information with data brokers, advertisers, or analytics companies that build advertising profiles.</p>
+<h3 id="disclosures-required-by-law-and-business-transfers">9. Disclosures Required by Law and Business Transfers</h3>
+<p>We may disclose information in response to valid legal process, regulatory requests, or law-enforcement requests, or to protect our rights and the safety of our users.</p>
+<p>If Groop is ever transferred to a new developer or organization, or if development is discontinued, information may be transferred as part of that transition, subject to this Policy or a policy with at least equivalent protections, or deleted rather than transferred. We will provide notice of any such change where required by law or where it affects how your information is handled.</p>
+<h2 id="part-four-retention-and-your-rights">Part Four: Retention and Your Rights</h2>
+<h3 id="data-retention">10. Data Retention</h3>
+<ul>
+<li><strong>Event names, time frames, and availability responses:</strong> automatically deleted 90 days after creation</li>
+<li><strong>Crash and performance logs:</strong> retained only as long as needed to diagnose and resolve issues, and in any case no longer than 90 days</li>
+<li>We do not retain any data beyond what’s needed to provide the Service and fix technical problems.</li>
+</ul>
+<h3 id="your-privacy-rights">11. Your Privacy Rights</h3>
+<p>Because the Service doesn’t use accounts, most data is tied to a group chat rather than to an individual identity, and it is deleted automatically after 90 days. If you’d like us to delete specific event or availability data sooner, or have questions about what’s stored, email groopsupport@gmail.com and we’ll respond within 45 days.</p>
+<h3 id="california-residents-ccpacpra">12. California Residents (CCPA/CPRA)</h3>
+<p>If you are a California resident, you have the right to:</p>
+<ul>
+<li>Know what personal information we collect, use, and disclose</li>
+<li>Delete your personal information, subject to legal exceptions</li>
+<li>Correct inaccurate personal information</li>
+<li>Opt out of sale or sharing — we do <strong>not</strong> sell or share personal information</li>
+<li>Be free from discrimination for exercising these rights</li>
+</ul>
+<p>To exercise a California right, email groopsupport@gmail.com with subject “California Privacy Request.”</p>
+<h2 id="part-five-childrens-privacy-security-and-more">Part Five: Children’s Privacy, Security, and More</h2>
+<h3 id="childrens-privacy">13. Children’s Privacy</h3>
+<p>Groop is not directed to children under 13, and we do not knowingly collect personal information from children under 13. The Service does not require sign-up, and the only information collected — event names, time frames, and a chosen display name — is provided voluntarily by participants in an existing group chat for the limited purpose of scheduling.</p>
+<p>If we become aware that we have inadvertently collected information from a child under 13 in a manner not permitted by the Children’s Online Privacy Protection Act (COPPA), we will delete that information promptly. If you believe a child under 13 has used the Service and provided information to us, please contact us at groopsupport@gmail.com.</p>
+<h3 id="security-and-international-use">14. Security and International Use</h3>
+<h4 id="security">14.1 Security</h4>
+<p>We use encryption in transit and industry-standard access controls to protect the data we store. No system is perfectly secure, and we cannot guarantee absolute security.</p>
+<h4 id="data-breach-response">14.2 Data Breach Response</h4>
+<p>If a security incident affects your information, we will assess its scope, notify affected users without undue delay, and notify regulators as required by applicable law.</p>
+<h4 id="automated-processing">14.3 No Automated Decision-Making</h4>
+<p>Groop displays each participant's submitted availability overlapped in a grid. Groop does not analyze, rank, or recommend a "best" time, it simply displays the responses as submitted. Because there is no automated decision or recommendation involved, this feature does not fall under Article 22 of the GDPR or similar automated-decision-making provisions in other laws.</p>
+<h4 id="international-use">14.4 International Use</h4>
+<p>The Service is distributed worldwide through Apple’s App Store. Regardless of where you access the Service from, your information is processed in the United States, where data protection laws may differ from those in your country. By using the Service, you understand your information will be transferred to and processed in the United States.</p>
+<p><strong>Users in the European Economic Area and United Kingdom (GDPR / UK GDPR):</strong> Groop is the data controller for information processed through the Service. Our legal bases for processing are set out in Section 7. In addition to the rights in Section 11, EEA and UK residents have the right to data portability and the right to lodge a complaint with their local supervisory authority (in the UK, the Information Commissioner’s Office at ico.org.uk). Where we transfer personal data from the EEA or UK to the United States, we rely on Standard Contractual Clauses or an equivalent lawful transfer mechanism with our service providers. [If required for your specific processing volume/nature, you may need to appoint an EU/UK representative under Art. 27 GDPR — confirm with counsel.]</p>
+<p><strong>Users in Canada (PIPEDA):</strong> Canadian residents have the right to access and correct their personal information and to withdraw consent, as described in Section 11. You may also file a complaint with the Office of the Privacy Commissioner of Canada at priv.gc.ca.</p>
+<p><strong>Users elsewhere:</strong> Other jurisdictions may provide additional statutory rights. Regardless of location, you can always reach us at groopsupport@gmail.com to ask what data we hold or to request its deletion.</p>
+<h3 id="changes-to-this-policy">15. Changes to This Policy</h3>
+<p>We will post any material changes to this Policy here with an updated effective date, and where required by law, provide additional notice.</p>
+<h3 id="contact-us">16. Contact Us</h3>
+<p>Privacy questions, data requests, and complaints: groopsupport@gmail.com</p>
+</div>
 </body>
 </html>
